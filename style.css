@@ -99,3 +99,23 @@ li a:hover::before{
     position: relative;
     min-height: 80rem;
 }
+
+.home h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+
+.home p{
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+
+}
+
+.home {
+    padding: 7rem;
+    padding-right: 2rem;
+
+}
