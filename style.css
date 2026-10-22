@@ -1,17 +1,19 @@
 body{
-    padding-top: 6rem;
-    background-image: url(image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;    
+    padding-top: 0;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #052659;
+    color: white;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -91,13 +93,21 @@ li a:hover::before{
     transform: scale(1.03);
 }
 
-#home{
-    background-image: url(image.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 80rem;
+main{
+    flex: 1;
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("image.png") center/cover no-repeat;
 }
 
 .home h1 {
@@ -114,8 +124,111 @@ li a:hover::before{
 
 }
 
-.home {
-    padding: 7rem;
-    padding-right: 2rem;
+footer, a{
+    color: #5483B3;
+}
+
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 0;
+    backdrop-filter: blur(6px);
+    color: white;
+    
+}
+
+h2{
+    text-align:center ;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about p{
+    text-align: center;
+    font-weight: 300;
 
 }
+
+.info{
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+
+.about{
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.about-section h2{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.about-section p{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.about-section {
+    align-items: center;
+    padding: 4rem;
+    margin: 3rem 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+.gallery {
+    padding: 6rem 2rem 3rem;
+}
+
+.heading2 {
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+#art-type {
+    border-radius: 9px;
+    border: 0.1rem solid white;
+    width: 15rem;
+    height: 3rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #052659;
+    margin-left: 7rem;
+    text-align: center;
+}
+
+#gallery-info {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.art-card {
+    background: white;
+    color: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.art-details {
+    padding: 1rem;
+    background: white;
+    color: black;
+}
+
+
+
