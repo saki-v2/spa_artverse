@@ -19,6 +19,11 @@
       "name": "Alvan Kimani",
       "comment": "wonderfull experience",
       "id": "p720DP6rPwQ"
+    },
+    {
+      "name": "john",
+      "comment": "nice",
+      "id": "-nhmrKmJgdg"
     }
   ],
   "artworks": [
@@ -43,5 +48,6 @@
       "artist_title": "James",
       "image": "images/photograph.jpg"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
