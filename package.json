@@ -1,0 +1,24 @@
+{
+  "name": "spa_artverse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saki-v2/spa_artverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saki-v2/spa_artverse/issues"
+  },
+  "homepage": "https://github.com/saki-v2/spa_artverse#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}

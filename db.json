@@ -27,21 +27,21 @@
       "type": "paintings",
       "title": "painting",
       "artist_title": "Jonathan",
-      "image_id": "images/painting.jpg"
+      "image": "images/painting.jpg"
     },
     {
       "id": "2",
       "type": "sculpture",
       "title": "sculpture",
       "artist_title": "Ludwig",
-      "image_id": "image/sculpture.jpg"
+      "image": "images/sculpture.jpg"
     },
     {
       "id": "3",
       "type": "photograph",
       "title": "photograph",
       "artist_title": "James",
-      "image_id": "image/photograph.jpg"
+      "image": "images/photograph.jpg"
     }
   ]
 }

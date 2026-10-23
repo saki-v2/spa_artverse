@@ -66,24 +66,19 @@ const typeSelect = document.getElementById("art-type");
 const galleryInfo = document.getElementById("gallery-info");
 const galleryGrid = document.getElementById("gallery-grid");
  
+
 function showArtwork(art) {
   const card = document.createElement("article");
   card.className = "art-card";
- 
-//API key
-  let imageUrl = art.image;
-  if (art.image_id) {
-    imageUrl =
-      "https://www.artic.edu/iiif/2/" + art.image_id + "/full/400,/0/default.jpg";
-  }
- 
-  card.innerHTML =
-    '<img src="' + imageUrl + '" alt="' + art.title + '">' +
-    '<div class="art-details">' +
-    "<h3>" + art.title + "</h3>" +
-    "<p>" + art.artist_title + "</p>" +
-    "</div>";
- 
+
+  card.innerHTML = `
+    <img src="${art.image}" alt="${art.title}">
+    <div class="art-details">
+      <h3>${art.title}</h3>
+      <p>${art.artist_title}</p>
+    </div>
+  `;
+
   galleryGrid.appendChild(card);
 }
  
