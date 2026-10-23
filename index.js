@@ -13,7 +13,7 @@ function showReview(review) {
 
 // GET
 function loadReviews() {
-  fetch("https://saki-v2.github.io/spa_artverse/db.json")
+  fetch("http://localhost:3000/reviews")
     .then(function (response) {
       return response.json();
     })
@@ -36,7 +36,7 @@ function storeReview(e) {
     comment: document.getElementById("comment-area").value,
   };
 
-  fetch("https://saki-v2.github.io/spa_artverse/db.json", {
+  fetch("http://localhost:3000/reviews", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(reviewData),
@@ -86,7 +86,7 @@ function loadGallery(type) {
   galleryInfo.textContent = "Loading artworks...";
   galleryGrid.innerHTML = "";
  
-  let url = "https://saki-v2.github.io/spa_artverse/db.json";
+  let url = "http://localhost:3000/artworks";
  
   if (type !== "all") {
     url = url + "?type=" + type;
