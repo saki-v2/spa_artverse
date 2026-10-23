@@ -27,7 +27,7 @@
             </li>
         </ul>
 
-        <button class="sign-btn">Sign In</button>
+        <button class="sign-btn" id="open-signup">Sign Up</button>
 
     </header>
     <main>
@@ -72,11 +72,38 @@
             
             </div>
         </section>
+
+        <section class="reviews">
+            <h2 class="heading2">Reviews</h2>
+            <form action="submit" id="review-form">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment-area" placeholder="comment here..." required></textarea>
+                <button type="submit" class="sign-btn">Submit Review</button>
+            </form>
+
+            <p id="message-view" role="alert"></p>
+            <div id="list-view" class="list-view"></div>
+
+        </section>
+
+        <div id="signup-box" class="signup-box hidden">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-name" placeholder="Your name" required>
+                <input type="email" id="signup-email" placeholder="Your email" required>
+                <button type="submit" class="sign-btn">Create Account</button>
+                <button type="button" id="close-signup">Close</button>
+            </form>
+        </div>
     </main>
 
 
     <footer class="footer">
-        <h2>For more information, <a href="#">learn more</a></h2>
+        <p>For more information, <a href="#">learn more</a></p>
                 <div class="footer-nav">
             <ul>
                 <li>

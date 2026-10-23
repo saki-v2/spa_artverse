@@ -1,9 +1,47 @@
 {
-    "reviews":[
-        {
-            "id" : "a001",
-            "name" : "Alvan",
-            "comment" : "I love ArtVerse"
-        }
-    ]
+  "reviews": [
+    {
+      "name": "Alvan",
+      "comment": "I love ArtVerse",
+      "id": "tnNtgyBGsXY"
+    },
+    {
+      "name": "Yvonne",
+      "comment": "A great help",
+      "id": "nuuXb754adQ"
+    },
+    {
+      "name": "Kim",
+      "comment": "10/10 website",
+      "id": "3m7cBzNXL54"
+    },
+    {
+      "name": "Alvan Kimani",
+      "comment": "wonderfull experience",
+      "id": "p720DP6rPwQ"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "1",
+      "type": "paintings",
+      "title": "painting",
+      "artist_title": "Jonathan",
+      "image_id": "images/painting.jpg"
+    },
+    {
+      "id": "2",
+      "type": "sculpture",
+      "title": "sculpture",
+      "artist_title": "Ludwig",
+      "image_id": "image/sculpture.jpg"
+    },
+    {
+      "id": "3",
+      "type": "photograph",
+      "title": "photograph",
+      "artist_title": "James",
+      "image_id": "image/photograph.jpg"
+    }
+  ]
 }
