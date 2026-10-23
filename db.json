@@ -19,11 +19,6 @@
       "name": "Alvan Kimani",
       "comment": "wonderfull experience",
       "id": "p720DP6rPwQ"
-    },
-    {
-      "name": "john",
-      "comment": "nice",
-      "id": "-nhmrKmJgdg"
     }
   ],
   "artworks": [
@@ -47,7 +42,27 @@
       "title": "photograph",
       "artist_title": "James",
       "image": "images/photograph.jpg"
+    },
+    {
+      "id": "4",
+      "type": "photographs",
+      "title": "photograph",
+      "artist_title": "Jackson",
+      "image": "images/photograph1.jpg"
+    },
+    {
+      "id": "5",
+      "type": "paintings",
+      "title": "artpiece",
+      "artist_title": "Yvonne M",
+      "image": "images/painting1.jpg"
+    },
+    {
+      "id": "6",
+      "type": "sculpture",
+      "title": "sculp 2",
+      "artist_title": "Johnes",
+      "image": "images/sculpture1.jpg"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

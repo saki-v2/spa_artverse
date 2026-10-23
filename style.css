@@ -117,6 +117,11 @@ main{
 
 }
 
+.home-info {
+    margin-left: 3rem;
+    max-width: 700px;
+}
+
 .home p{
     color: white;
     font-weight: 300;
@@ -142,48 +147,63 @@ h2{
     font-weight: 700;
 }
 
-.about p{
-    text-align: center;
-    font-weight: 300;
 
-}
 
 .info{
     padding: 3rem 2rem;
     text-align: center;
 }
 
-
-.about{
-    align-items: center;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 800;
-    padding-bottom: 2rem;
-}
-
-.about-section h2{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-}
-
-.about-section p{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.about-section {
-    align-items: center;
-    padding: 4rem;
+.about-box {
     margin: 3rem 2rem;
-    border: 2px solid black;
-    border-radius: 15px;
+    padding: 3rem;
     background-color: white;
     color: black;
+    border: 2px solid black;
+    border-radius: 15px;
 }
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-info {
+    flex: 1;
+    text-align: left;
+}
+
+.about-info h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-info h3:first-child {
+    margin-top: 0;
+}
+
+.about-info p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.about-photo {
+    flex: 1;
+    width: 45%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
 
 .gallery {
     padding: 6rem 2rem 3rem;

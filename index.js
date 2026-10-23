@@ -1,25 +1,23 @@
-// REVIEW
+//reviews
 const reviewForm = document.getElementById("review-form");
 const messageView = document.getElementById("message-view");
 const listView = document.getElementById("list-view");
 
-// Show one review on the page
 function showReview(review) {
   const card = document.createElement("div");
   card.className = "review-card";
   card.innerHTML = "<h3>" + review.name + "</h3><p>" + review.comment + "</p>";
   listView.appendChild(card);
 }
-
-// GET
+//fetch
 function loadReviews() {
-  fetch("//http://localhost:3000/reviews")
+  fetch("db.json")
     .then(function (response) {
       return response.json();
     })
-    .then(function (reviews) {
-      for (let i = 0; i < reviews.length; i++) {
-        showReview(reviews[i]);
+    .then(function (data) {
+      for (let i = 0; i < data.reviews.length; i++) {
+        showReview(data.reviews[i]);
       }
     })
     .catch(function (error) {
@@ -27,7 +25,7 @@ function loadReviews() {
       messageView.textContent = "Could not load reviews.";
     });
 }
-//POST
+//review storage
 function storeReview(e) {
   e.preventDefault();
 
@@ -36,36 +34,18 @@ function storeReview(e) {
     comment: document.getElementById("comment-area").value,
   };
 
-  fetch("//http://localhost:3000/reviews", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(reviewData),
-  })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (savedReview) {
-      showReview(savedReview);
-      messageView.textContent = "Thanks for your review!";
-      reviewForm.reset();
-    })
-    .catch(function (error) {
-      console.log(error);
-      messageView.textContent = "Sorry, your review could not be saved.";
-    });
+  showReview(reviewData);
+  messageView.textContent = "Thanks for your review!";
+  reviewForm.reset();
 }
 
-// submit
 reviewForm.addEventListener("submit", storeReview);
 
 loadReviews();
 
-// Gallery section
-
 const typeSelect = document.getElementById("art-type");
 const galleryInfo = document.getElementById("gallery-info");
 const galleryGrid = document.getElementById("gallery-grid");
- 
 
 function showArtwork(art) {
   const card = document.createElement("article");
@@ -81,26 +61,28 @@ function showArtwork(art) {
 
   galleryGrid.appendChild(card);
 }
- 
+
 function loadGallery(type) {
   galleryInfo.textContent = "Loading artworks...";
-  galleryGrid.innerHTML = "//http://localhost:3000/artworks";
- 
-  let url = "";
- 
-  if (type !== "all") {
-    url = url + "?type=" + type;
-  }
- 
-  fetch(url)
+  galleryGrid.innerHTML = "";
+
+  fetch("db.json")
     .then(function (response) {
       return response.json();
     })
-    .then(function (artworks) {
+    .then(function (data) {
+      let artworks = data.artworks;
+
+      if (type !== "all") {
+        artworks = artworks.filter(function (art) {
+          return art.type === type;
+        });
+      }
+
       for (let i = 0; i < artworks.length; i++) {
         showArtwork(artworks[i]);
       }
- 
+
       if (artworks.length === 0) {
         galleryInfo.textContent = "No artworks found.";
       } else {
@@ -112,28 +94,21 @@ function loadGallery(type) {
       galleryInfo.textContent = "Sorry, we could not load the gallery.";
     });
 }
- 
-// Change EventListener
+
 typeSelect.addEventListener("change", function (e) {
   loadGallery(e.target.value);
 });
- 
-loadGallery("all");
 
-// Click EventListener for signing up
+loadGallery("all");
 
 const openSignup = document.getElementById("open-signup");
 const closeSignup = document.getElementById("close-signup");
 const signupBox = document.getElementById("signup-box");
 
-// show the form
 openSignup.addEventListener("click", function () {
   signupBox.classList.remove("hidden");
 });
-//hide the form
+
 closeSignup.addEventListener("click", function () {
   signupBox.classList.add("hidden");
 });
-
-//http://localhost:3000/reviews
-//http://localhost:3000/artworks
