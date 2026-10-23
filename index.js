@@ -13,7 +13,7 @@ function showReview(review) {
 
 // GET
 function loadReviews() {
-  fetch("http://localhost:3000/reviews")
+  fetch("//http://localhost:3000/reviews")
     .then(function (response) {
       return response.json();
     })
@@ -36,7 +36,7 @@ function storeReview(e) {
     comment: document.getElementById("comment-area").value,
   };
 
-  fetch("http://localhost:3000/reviews", {
+  fetch("//http://localhost:3000/reviews", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(reviewData),
@@ -84,9 +84,9 @@ function showArtwork(art) {
  
 function loadGallery(type) {
   galleryInfo.textContent = "Loading artworks...";
-  galleryGrid.innerHTML = "";
+  galleryGrid.innerHTML = "//http://localhost:3000/artworks";
  
-  let url = "http://localhost:3000/artworks";
+  let url = "";
  
   if (type !== "all") {
     url = url + "?type=" + type;
@@ -134,3 +134,6 @@ openSignup.addEventListener("click", function () {
 closeSignup.addEventListener("click", function () {
   signupBox.classList.add("hidden");
 });
+
+//http://localhost:3000/reviews
+//http://localhost:3000/artworks
