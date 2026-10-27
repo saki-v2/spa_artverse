@@ -39,7 +39,7 @@
     {
       "id": "3",
       "type": "photographs",
-      "title": "photograph",
+      "title": "photo deck",
       "artist_title": "James",
       "image": "images/photograph.jpg"
     },
@@ -63,6 +63,76 @@
       "title": "sculp 2",
       "artist_title": "Johnes",
       "image": "images/sculpture1.jpg"
+    },
+    {
+      "id": "7",
+      "type": "sculpture",
+      "title": "owl sculpture",
+      "artist_title": "Rodrigez",
+      "image": "images/sculp2.jpg"
+    },
+    {
+      "id": "8",
+      "type": "sculpture",
+      "title": "Kenya's pride",
+      "artist_title": "Shomet",
+      "image": "images/sculp3.jpg"
+    },
+    {
+      "id": "9",
+      "type": "sculpture",
+      "title": "Stone Elephant",
+      "artist_title": "Elvis J",
+      "image": "images/sculp4.jpg"
+    },
+    {
+      "id": "10",
+      "type": "photographs",
+      "title": "cinematic",
+      "artist_title": "Trinah N",
+      "image": "images/cinematic.jpg"
+    },
+    {
+      "id": "11",
+      "type": "paintings",
+      "title": "The Eye",
+      "artist_title": "Fiona K",
+      "image": "images/painting2.jpg"
+    },
+    {
+      "id": "12",
+      "type": "paintings",
+      "title": "Gazing",
+      "artist_title": "Jabari B",
+      "image": "images/painting3.jpg"
+    },
+    {
+      "id": "13",
+      "type": "paintings",
+      "title": "Tower",
+      "artist_title": "Frewin J",
+      "image": "images/painting4.jpg"
+    },
+    {
+      "id": "14",
+      "type": "photographs",
+      "title": "Elegant",
+      "artist_title": "Sabrina H",
+      "image": "images/photo.jpg"
+    },
+    {
+      "id": "15",
+      "type": "photographs",
+      "title": "Kenrick Lamar",
+      "artist_title": "Jake M",
+      "image": "images/Kendrick.jpg"
+    },
+    {
+      "id": "16",
+      "type": "photographs",
+      "title": "Outside",
+      "artist_title": "Elizabeth H",
+      "image": "images/out.jpg"
     }
   ]
 }
